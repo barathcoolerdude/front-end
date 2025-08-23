@@ -1,0 +1,87 @@
+.layout{
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "sidebar content content"
+          "sidebar footer footer ";
+
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 80px 200px 60px;
+}
+
+.header{
+    grid-area: header;
+    border-radius: 6px;
+}
+
+.nav-bar{
+    background-color: #cf1b1b;
+    overflow: auto;;
+    border-radius: 6px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar ul li{
+    margin-right: 1rem;
+}
+
+.nav-bar ul li.contact{
+    margin-left: auto;
+}
+
+.nav-link button{
+    background:none;
+    border:none;
+}
+
+.nav-link button a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link button a:hover{
+    text-decoration: underline;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    border-radius: 6px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid rgb(73, 219, 116);
+}
+
+.sidebar ul {
+  list-style-type: none;  /* remove default list styling */
+  padding: 0;             /* remove default padding */
+  margin: 0;              /* remove default margin */
+}
+
+.sidebar ul li a {
+  display: block;          /* full clickable block */
+  padding: 10px 10px;      /* bigger clickable area */
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
+
+.content{
+    grid-area: content;
+    border-radius: 6px;
+}
+
+.footer{
+    grid-area: footer;
+    border-radius: 6px;
+}
+
+
+
