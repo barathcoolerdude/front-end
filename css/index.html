@@ -4,87 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="styles.css">
     <style>
-    .grid-container {
-        display: grid;
-        gap: 10px;
-        padding: 20px;
-    }
+        body {
+            background-color: lightblue;
+            font-size: 60px;
+        }
 
-    .grid-item{
-        background-color: rgb(24, 202, 202);
-        text-align: center;
-        padding: 20px;
-        margin: 10px;
-        display: flex;
-    }
+        h1{
+            color: rgb(59, 174, 33);
+            text-align: center;
+            font-size: 40px;
+        }
 
-    .layout{
-        display: grid;
-        gap:20px;
-        padding: 20px;
-        grid-template-areas: 
-            "header header header"
-            "sidebar content content"
-            "footer footer footer";
-    }
 
-    .header {
-        grid-area: header;
-        background-color: rgb(77, 44, 44);
-    }
+        @media (min-width: 1000px) {
+            body {
+                background-color: lightcoral;
+                font-size: 40px;
+            }
+            h1{
+                color: darkred;
+                font-size: 40px;
+            }
+        }
 
-    .sidebar {
-        grid-area: sidebar;
-        background-color: rgb(77, 77, 44);
-    }
+        @media (max-width: 1000px) {
+            body {
+                background-color: rgb(196, 62, 192);
+                font-size: 20px;
+            }
+            h1{
+                color: rgb(34, 43, 167);
+                font-size: 10px;
+            }
+        }
 
-    .content {
-        grid-area: content;
-        background-color: rgb(44, 77, 44);
-    }
-
-    .footer {
-        grid-area: footer;
-        background-color: rgb(44, 44, 77);
-    }
-
-</style>
+    </style>
 </head>
-
 <body>
-    <div class="grid-container" style="grid-template-columns: repeat(4, 34fr) ;">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-    </div>
+    <h1>this is for media query</h1>
 
-    <div class="grid-container" style= "grid-template-rows: repeat(3 ,10fr 30fr 40fr);">
-        <div class="grid-item">a</div>
-        <div class="grid-item">b</div>
-        <div class="grid-item">c</div>
-        <div class="grid-item">d</div>
-        <div class="grid-item">e</div>
-        <div class="grid-item">g</div>
-    </div>
-
-    <div class="layout">
-        <div class="grid-item header">
-            <nav>
-                <ul>
-                    <li><button><a href="">header</a></button></li>
-                    <li><button><a href="">about</a></button></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="grid-item sidebar">sidebar</div>
-        <div class="grid-item content">content</div>
-        <div class="grid-item footer">footer</div>
-    </div>
+    <p>background color changes when width lower then 720</p>
 </body>
 </html>
