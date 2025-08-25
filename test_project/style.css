@@ -6,7 +6,6 @@
           "sidebar footer footer ";
 
         grid-template-columns: 1fr 2fr 2fr;
-        grid-template-rows: 80px 200px 60px;
 }
 
 .header{
@@ -16,8 +15,9 @@
 
 .nav-bar{
     background-color: #cf1b1b;
-    overflow: auto;;
+    overflow: hidden;
     border-radius: 6px;
+    border: 1px solid rgb(73, 219, 116);
 }
 
 .nav-bar ul{
@@ -73,10 +73,17 @@
   background-color: #575757;
 }
 
-.content{
+.content-container{
+    display: grid;
     grid-area: content;
-    border-radius: 6px;
+    background-color: green;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.content-container .content{
+    border: 1px solid red;
+}
+
 
 .footer{
     grid-area: footer;
