@@ -1,0 +1,48 @@
+.nav-contaner{
+    border: rgb(207, 72, 155) 2px solid;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(46, 110, 88);
+}
+
+.nav-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button:hover{
+    background-color: rgb(46, 110, 88);
+    background-color: rgb(146, 219, 126);
+}
+
+.layout{
+    display: grid;
+    grid-template-areas: 
+    "photo content-1 content-1"
+    "content content content";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+.layout .photo{
+    grid-area: photo;
+    object-fit: cover;
+}
+
+.layout .content-1{
+    grid-area: content-1;
+    background-color: rgb(117, 62, 62);
+    font-size: large;
+}
+.layout .content{
+    grid-area: content;
+    background-color: rgb(117, 62, 62);
+    font-size: large;
+}
+
