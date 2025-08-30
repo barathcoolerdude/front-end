@@ -1,0 +1,32 @@
+.home{
+    padding: 40px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ccc;
+    padding: 20px;
+    height: 300px;
+    gap: 20px;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid green;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+
+}
+
+.container .box .button-container{
+    display: flex;
+    border: 2px solid rgb(80, 128, 80);
+}
+
+.container .box .button{
+    border: none;
+    cursor: pointer;
+}

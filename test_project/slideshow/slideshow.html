@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./slideshow.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header-menu">
+        <div class="nav-bar">
+          <nav class="nav-bar">
+            <ul>
+              <li class="nav-link home">
+                <button><a href="">home</a></button>
+              </li>
+              <li class="nav-link history">
+                <button><a href="">history</a></button>
+              </li>
+              <li class="nav-link data">
+                <button><a href="">data</a></button>
+              </li>
+              <li class="nav-link about">
+                <button><a href="">about</a></button>
+              </li>
+              <li class="nav-link contact">
+                <button><a href="">contact</a></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-dropdown">
+        <div class="drop-down">
+          <div class="buttons">
+            <button><a href="">header dropdown</a></button>
+          </div>
+        </div>
+      </div>
+      <!-- slides from here -->
+      <div class="slider">
+        <div class="slides">
+          <div class="mySlides fade">
+            <img
+              src="./src/back.jpeg"
+              alt="blind guy image"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="./src/backgroundImage_1.jpeg"
+              alt="blind guy image"
+              style="width: 100%"
+            />
+          </div>
+          <div class="mySlides fade">
+            <img
+              src="./src/backgroundImage_2.jpeg"
+              alt="blind guy image"
+              style="width: 100%"
+            />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+          <a class="next" onclick="plusSlides(1)">&#62;</a>
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </div>
+      <!-- slides to here -->
+      <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rerum adipisci aliquid atque commodi beatae? Pariatur, iure facere! Esse cupiditate ratione, velit quos nobis distinctio voluptates provident id omnis illo ab aspernatur nam suscipit facere nesciunt ut explicabo facilis quibusdam. Vel, numquam. Nostrum, cumque? Architecto eligendi sit veritatis omnis vero.</div>
+    </div>
+    <script src="./slideshow.js"></script>
+  </body>
+</html>
