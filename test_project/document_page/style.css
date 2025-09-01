@@ -7,6 +7,8 @@
     grid-template-columns: 1fr 2fr 2fr;
 
     grid-template-rows: 1fr 3fr;
+
+    max-height: 500px;
 }
 
 .header {
@@ -54,12 +56,12 @@
     padding: 20px;
     padding: 0;
     margin: 0;
+    overflow: scroll;
 }
 
 .sidebar .docs{
     padding: 0;
     margin: 0;
-    overflow: scroll;
 }
 
 .sidebar ul{
