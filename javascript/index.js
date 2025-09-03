@@ -1,5 +1,12 @@
-const popup = document.getElementById("popup")
+// const text = document.getElementById("popup");
 
-window.showpopup = function() {
-    alert(popup.innerText);
-} 
+// function showpopup() {
+//     text.style.color = "red";
+// }
+
+// declare a variable
+
+let a = 10;
+a =11;
+
+console.log(a);
