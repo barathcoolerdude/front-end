@@ -8,8 +8,23 @@
 </head>
 <body>
     
-    <h1 id="popup">welcome my bratha</h1>
-    <button onclick="showpopup()">welcome bratha</button>
-    <script src="./index.js"></script>
+    <form id="the_week">
+        <label for="choosen_week">week</label>
+            <select id="week" name="week">
+                <option value="" disabled selected>select....</option>
+                <option value="monday">monday</option>
+                <option value="tuesday">tuesday</option>
+                <option value="wednesday">wednesday</option>
+                <option value="thursday">thursday</option>
+                <option value="friday">friday</option>
+                <option value="saturday">saturday</option>
+                <option value="sunday">sunday</option>
+            </select>
+        <button type="submit" id="submit">submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script src="index.js"></script>
+    
 </body>
 </html>

@@ -1,12 +1,10 @@
-let a = 10, b = 5, c =6;
+let day = 3, number = 5
 
-if (a > b){
-    console.log("a is greater than b");
-}
-if(c > b){
-    console.log("c is greater than b");
-}
-
-if(a > c){
-    console.log("a is greater than c");
+switch (day = day>2){
+    case true:
+        console.log("it is true");
+    case number:
+        console.log("it is divisible by 2");
+    default:
+        console.log("it's a bad day");
 }
