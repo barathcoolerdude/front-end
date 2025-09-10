@@ -1,33 +1,50 @@
-document.getElementById("the_week").addEventListener("submit", function(event){
-    event.preventDefault();
+// // type 1 declared functions
+// function hello (firstname, lastname){
+//     name = firstname + " " + lastname;
+//     console.log(`hello, ${name}!`);
+//     return name;
+// }
+// lastname = "wardo";
+// firstname = "za"
+// // type 2 assignment of function to a variabel
+// let result = hello(firstname, lastname);
 
-    let week = document.getElementById("week");
-    let result = document.getElementById("result");
+// console.log(result);
+// // type 3 arrow function
+// const addition = (a , b) => a + b;
 
-    switch(week.value){
-        case "monday":
-            result.innerHTML = "Monday is the first day of the week.";
-            break;
-        case "tuesday":
-            result.innerHTML = "Tuesday is the second day of the week.";
-            break;
-        case "wednesday":
-            result.innerHTML = "Wednesday is the third day of the week.";
-            break;
-        case "thursday":
-            result.innerHTML = "Thursday is the fourth day of the week.";
-            break;
-        case "friday":
-            result.innerHTML = "Friday is the fifth day of the week.";
-            break;
-        case "saturday":
-            result.innerHTML = "Saturday is the sixth day of the week.";
-            break;
-        case "sunday":
-            result.innerHTML = "Sunday is the seventh day of the week.";
-            break;
-        default:
-            result.innerHTML = "Please enter a valid day of the week.";
-            break;
-    }
-})
+// console.log(addition(5,10));
+
+// // type 4 default parameters
+// function greetuser (name = "guest"){
+//     console.log(`hello, ${name}!`);
+// } 
+// greetuser("za wardo");
+
+// // type 5 hiher order funcition
+// no_of_times = 3;
+// function higher(func, no_of_times = 5){
+//     console.log(`${func(6, 5)}  number of furits: ${no_of_times}`)
+// }
+
+// higher(addition, no_of_times);
+
+// // type 6 anomous function
+// setTimeout(function() {
+//     console.log("hello, world"+" "+ "!");
+// }, 1000);
+
+// (function(){
+//     console.log("this is IIFE");
+// })()
+
+const greet = function(name, age){
+    console.log("ola");
+}
+const obj = {
+    name: "za wardo:",
+    age: 25,
+    greet: "ola"
+}
+
+console.log(obj.greet);
