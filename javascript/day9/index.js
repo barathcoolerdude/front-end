@@ -1,7 +1,10 @@
-function display(){
-    let username = document.getElementById("username").value
 
+function display(){
+    let input = document.getElementById("username")
+    let username = input.value
     let display = document.getElementById("display")
 
-    display.innerText = username
+    let li = document.createElement("li")
+    li.innerText = username
+    display.appendChild(li)
 }
